@@ -65,7 +65,6 @@ class Stairs:
         self._data = None
         self._valid_deltas = False
         self._valid_values = False
-        self._masked = False
         self._closed = closed
         self.initial_value = initial_value
         self._clear_cache()
@@ -778,6 +777,7 @@ class Stairs:
 
 
 def _add_operations():
+    from staircase import io
     from staircase.core import layering, ops, sampling, slicing
 
     ops.add_operations(Stairs)
@@ -785,3 +785,5 @@ def _add_operations():
     sampling.add_methods(Stairs)
     layering.add_methods(Stairs)
     slicing.add_methods(Stairs)
+
+    io.add_methods(Stairs)

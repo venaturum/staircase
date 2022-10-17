@@ -21,6 +21,7 @@ from staircase.core.arrays import (
 from staircase.core.arrays.extension import StairsArray
 from staircase.core.slicing import StairsSlicer
 from staircase.core.stats.distribution import Dist
+from staircase.io.json import read_json
 from staircase.test_data import make_test_data
 
 
